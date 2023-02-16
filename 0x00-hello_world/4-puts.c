@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - is a function
+ * main - this is a main function
  *
- * return : ends the main function
+ * Return: always 0
  */
 
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return 0;
+	return (0);
 }
