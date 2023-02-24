@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+#include <stdio.h>
 void print_square(int size);
 void print_diagonal(int n);
 void print_line(int n);
