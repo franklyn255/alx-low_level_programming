@@ -1,6 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+void puts_half(char *str);
 void puts2(char *str);
 void rev_string(char *s);
 void print_rev(char *s);
