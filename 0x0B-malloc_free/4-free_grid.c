@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - frees 2D array grid previously created by alloc_grid
+ * free_grid - frees 2D grid previously created by alloc_grid
  * @grid: 2D grid
  * @height: height of 2D array
  */
@@ -15,11 +15,12 @@ void free_grid(int **grid, int height)
 	i = 0;
 	while (i < height)
 	{
-		for (; grid[i]; i++)
+		if (grid[i] != NULL)
 		{
 			free(grid[i]);
-			return;
+			grid[i] = NULL;
 		}
+		i++;
 	}
 	free(grid);
 }
