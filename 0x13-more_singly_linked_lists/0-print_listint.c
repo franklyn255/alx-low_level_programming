@@ -15,6 +15,5 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 		s++;
 	}
-	h->next = NULL:
 	return (s);
 }
