@@ -6,19 +6,19 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int new;
-	int j, count = 0;
+	unsigned long int new = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	int count = 0;
 
-	for (j = 63; j >= 0; j--)
+	while (new)
 	{
-		new = n >> 1;
-		if (new & 1)
+		if ((new & n) == new)
 		{
 			_putchar('1');
-			count++;
+			count = 1;
 		}
 		else if (count)
 			_putchar('0');
+		new >>= 1;
 
 	}
 	if (!count)
